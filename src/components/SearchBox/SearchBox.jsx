@@ -16,8 +16,8 @@ const SearchBox = () => {
   };
 
   return (
-    <div className={css.searchWrapper}>
-      <p className={css.heading}>Find contact by name:</p>
+    <div className={css.searcBox}>
+      <p className={css.heading}>Find contact by name</p>
       <TextField
         sx={{
           width: 400,
@@ -25,14 +25,14 @@ const SearchBox = () => {
         }}
         fullWidth
         InputLabelProps={{
-          style: { color: "#FB9AD1" },
+          style: { color: "#212121" },
         }}
         InputProps={{
-          style: { color: "#FFFFFF" },
+          style: { color: "#212121" },
         }}
         type="text"
-        label="Type contact's name..."
-        title="Type contact's name"
+        label="Contact's name..."
+        title="Contact's name"
         value={searchContact}
         onChange={handleChange}
       />

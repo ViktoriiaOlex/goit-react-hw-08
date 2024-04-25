@@ -1,4 +1,4 @@
-.contactBox {
+.contactContainer {
   border: 2px solid black;
   border-radius: 8px;
   width: 400px;
@@ -14,17 +14,17 @@
   font-size: x-large;
 }
 
-.text {
+.contactText {
   font-size: 19px;
   font-weight: 600;
 }
 
 .customModal {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #ffcdea;
+  background-color: #ffb561;
   color: black;
   border-radius: 8px;
   padding: 20px;
@@ -35,8 +35,9 @@
 }
 
 .btnWrapper {
+  margin: 0 auto;
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .headingDelete {

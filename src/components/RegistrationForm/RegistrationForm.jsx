@@ -1,11 +1,8 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import { useDispatch } from "react-redux";
-
 import { register } from "../../redux/auth/operations";
-import { Button, TextField } from "@mui/material";
-
 import css from "./RegistrationForm.module.css";
-import { Password } from "@mui/icons-material";
+import { Button, TextField } from "@mui/material";
 
 const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -23,7 +20,6 @@ const RegisterForm = () => {
         resetForm();
       });
   };
-
   return (
     <Formik
       initialValues={initialValues}
@@ -58,10 +54,10 @@ const RegisterForm = () => {
                   label="Username"
                   fullWidth
                   InputLabelProps={{
-                    style: { color: "#FB9AD1" },
+                    style: { color: "#212121" },
                   }}
                   InputProps={{
-                    style: { color: "#FFFFFF" },
+                    style: { color: "#212121" },
                   }}
                 />
                 {meta.touched && meta.error && (
@@ -80,10 +76,10 @@ const RegisterForm = () => {
                   label="Email"
                   fullWidth
                   InputLabelProps={{
-                    style: { color: "#FB9AD1" },
+                    style: { color: "#212121" },
                   }}
                   InputProps={{
-                    style: { color: "#FFFFFF" },
+                    style: { color: "#212121" },
                   }}
                 />
                 {meta.touched && meta.error && (
@@ -103,10 +99,10 @@ const RegisterForm = () => {
                   type="password"
                   fullWidth
                   InputLabelProps={{
-                    style: { color: "#FB9AD1" },
+                    style: { color: "#212121" },
                   }}
                   InputProps={{
-                    style: { color: "#FFFFFF" },
+                    style: { color: "212121" },
                   }}
                 />
                 {meta.touched && meta.error && (

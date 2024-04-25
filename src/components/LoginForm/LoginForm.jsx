@@ -50,10 +50,10 @@ const LoginForm = () => {
                   label="Email"
                   fullWidth
                   InputLabelProps={{
-                    style: { color: "#FB9AD1" },
+                    style: { color: "#212121" },
                   }}
                   InputProps={{
-                    style: { color: "#FFFFFF" },
+                    style: { color: "#212121" },
                   }}
                 />
                 {meta.touched && meta.error && (
@@ -71,10 +71,10 @@ const LoginForm = () => {
                   label="Password"
                   fullWidth
                   InputLabelProps={{
-                    style: { color: "#FB9AD1" },
+                    style: { color: "#212121" },
                   }}
                   InputProps={{
-                    style: { color: "#FFFFFF" },
+                    style: { color: "#212121" },
                   }}
                 />
                 {meta.touched && meta.error && (

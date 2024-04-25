@@ -60,25 +60,25 @@ const ContactForm = () => {
               label="Name:"
               fullWidth
               InputLabelProps={{
-                style: { color: "#FB9AD1" },
+                style: { color: "#212121" },
               }}
               InputProps={{
-                style: { color: "#FFFFFF" },
+                style: { color: "#212121" },
               }}
             />
             <ErrorMessage name="name" component="span" />
             <Field
               type="text"
               name="number"
-              placeholder="123-00-19"
+              placeholder="123-45-67"
               as={TextField}
               label="Number:"
               fullWidth
               InputLabelProps={{
-                style: { color: "#FB9AD1" },
+                style: { color: "#212121" },
               }}
               InputProps={{
-                style: { color: "#FFFFFF" },
+                style: { color: "#212121" },
               }}
             />
             <ErrorMessage name="number" component="span" />

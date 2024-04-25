@@ -13,7 +13,7 @@ const Contact = ({ contact }) => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [editedContact, setEditedContact] = useState({ ...contact });
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   const openEditModal = () => {
     setIsEditModalOpen(true);
@@ -29,18 +29,27 @@ const Contact = ({ contact }) => {
     setIsDeleteModalOpen(false);
   };
 
+  const cancelDelete = () => {
+    setIsDeleteModalOpen(false);
+  };
+
   const handleSave = () => {
-    dispatch(editContact(editContact));
+    dispatch(editContact(editedContact));
     setIsEditModalOpen(false);
   };
+
+  useEffect(() => {
+    setEditedContact({ ...contact });
+  }, [contact]);
+
   useEffect(() => {
     setEditedContact({ ...contact });
   }, []);
 
   return (
-    <div className={css.contactBox}>
+    <div className={css.contactContainer}>
       <div>
-        <p className={css.text}>
+        <p className={css.contactText}>
           <IoPersonSharp className={css.icon} />
           {editedContact.name}
         </p>
@@ -53,6 +62,11 @@ const Contact = ({ contact }) => {
       <Button type="button" onClick={openEditModal} variant="contained">
         Edit
       </Button>
+
+      <Button type="button" onClick={openDeleteModal} variant="contained">
+        Delete
+      </Button>
+
       <Modal
         className={css.customModal}
         isOpen={isEditModalOpen}

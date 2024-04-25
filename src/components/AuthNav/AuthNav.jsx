@@ -7,7 +7,7 @@ const AuthNav = () => {
   return (
     <Stack
       direction="row"
-      divider={<Divider orientation="vertical" color="FFCDEA" flexItem />}
+      divider={<Divider orientation="vertical" color="212121" flexItem />}
       spacing={1}
     >
       <NavLink className={css.link} to="/register">
