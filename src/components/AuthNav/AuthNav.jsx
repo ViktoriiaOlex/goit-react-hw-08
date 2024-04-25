@@ -8,10 +8,13 @@ const AuthNav = () => {
     <Stack
       direction="row"
       divider={<Divider orientation="vertical" color="FFCDEA" flexItem />}
-      spacing={2}
+      spacing={1}
     >
       <NavLink className={css.link} to="/register">
         Register
+      </NavLink>
+      <NavLink className={css.link} to="/login">
+        Log In
       </NavLink>
     </Stack>
   );

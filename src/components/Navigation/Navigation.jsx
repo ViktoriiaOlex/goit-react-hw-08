@@ -9,7 +9,7 @@ const Navigation = () => {
     <Stack
       direction="row"
       divider={<Divider orientation="vertical" flexItem />}
-      spacing={2}
+      spacing={1}
     >
       <NavLink to="/">Home</NavLink>
       {isLoggedIn && <NavLink to="/contacts">Contacts</NavLink>}

@@ -1,9 +1,7 @@
-import React from "react";
-
 const Home = () => {
   return (
     <div>
-      <h1 style={{ color: "rgb(251, 154, 209)" }}>Welcome to Phone Book App</h1>
+      <h1 style={{ color: "rgb(252, 186, 3)" }}>Welcome</h1>
     </div>
   );
 };

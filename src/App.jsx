@@ -1,4 +1,3 @@
-import "./App.css";
 import { lazy, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
@@ -6,9 +5,10 @@ import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import { useAuth } from "./hooks/useAuth";
 import Modal from "react-modal";
-
 import Layout from "./components/Layout/Layout";
 import { refreshUser } from "./redux/auth/operations";
+
+import "./App.css";
 
 const Home = lazy(() => import("./pages/Home"));
 const Registration = lazy(() => import("./pages/Registration"));
