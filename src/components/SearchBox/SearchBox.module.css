@@ -1,0 +1,11 @@
+.searchWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: larger;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
